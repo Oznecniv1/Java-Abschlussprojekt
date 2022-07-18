@@ -31,3 +31,5 @@ Das ist ein Formular, dass erst Informationen aus der datenbank zieht und wenn d
 Dort steht noch nichts. Aber der User wird nach dem Login auf die Seite weitergeleitet.
 ## Startklasse
 Dort wird das Programm gestartet und der user wird sofort auf die Login Seite weitergeleitet.
+# exception handling
+Für exception handling hatte ich in den 4 Tagen KEINE Zeit. Es bestehen noch Fehler innerhald das Programms. z.b. in der Registrierung.
