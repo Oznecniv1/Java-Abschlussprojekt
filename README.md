@@ -10,7 +10,7 @@ da wir noch die externe Prüfung zum Java OCA hatten.
 ## Die planung des Projekts sah wie folgt aus.
 ### der Projekt aufbau
 ![Projektaufbau](https://user-images.githubusercontent.com/81367204/179500391-c3b758e1-1b9b-47c6-be10-ffa2f3fe0010.JPG)
-### Projektaufbau übersicht
+### Projektaufbau übersicht mit eigenen Notizen
 ![programmaufbauübersicht](https://user-images.githubusercontent.com/81367204/179500603-1a3738f6-6f88-42a5-9ba4-1841b95bee82.JPG)
 ### Planung der einzelnden Programme mit eigenen Notizen
 ![aufbau der einzelden programme](https://user-images.githubusercontent.com/81367204/179500627-8376d689-c0e5-46c0-a51f-7e8d30286c40.JPG)
@@ -31,15 +31,3 @@ Das ist ein Formular, dass erst Informationen aus der datenbank zieht und wenn d
 Dort steht noch nichts. Aber der User wird nach dem Login auf die Seite weitergeleitet.
 ## Startklasse
 Dort wird das Programm gestartet und der user wird sofort auf die Login Seite weitergeleitet.
-
-
-
-
-
-
-
-
-
-
-
-
