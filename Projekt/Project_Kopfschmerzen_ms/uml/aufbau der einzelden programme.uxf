@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1020</x>
+      <y>20</y>
+      <w>540</w>
+      <h>1040</h>
+    </coordinates>
+    <panel_attributes>halign=center
+3,aufbau von Spieleeintrag überlegen
+-
+textfeld:
+game name
+preis
+link
+releasdate
+-
+textarea:
+beschreibung
+-
+Comboboxen:
+publisher
+entwickler
+rating
+-
+checkboxen:
+gernre
+plattform
+style
+-
+button
+-
+hier werden die spiele eingetragen
+in der datenbank! Da ich KEINE 
+session verwende, denn da muss 
+man mit servlet arbeiten. 
+das ist ein HTML formular, dass 
+in verbindung mit java swing 
+verwendet werden kann.dass eine session 
+startet und die einträge mit den user
+in verbindung gesetzt werden können. 
+mit regularexpression wird der user 
+gezwungen die groß und kein 
+schreigung zu beachten und 
+alle korrekt auszufüllen.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+https://stackoverflow.com/questions/9822094/java-keep-global-database-session-in-swing-application
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>20</x>
+      <y>20</y>
+      <w>480</w>
+      <h>700</h>
+    </coordinates>
+    <panel_attributes>halign=center
+1,aufbau von registierung überlegen
+-
+textfeld:
+vorname
+nachname
+plz
+ort
+strasse
+hausnummer
+e-mail
+passwort
+-
+button
+-
+in diesem formular werden alle
+Informationen vom user gesammelt
+und in der datenbank eingetragen.
+mit regularexpression wird der user 
+gezwungen die groß und kein 
+schreigung zu beachten und 
+alle korrekt auszufüllen.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>520</x>
+      <y>20</y>
+      <w>480</w>
+      <h>400</h>
+    </coordinates>
+    <panel_attributes>halign=center
+2,aufbau von login überlegen
+-
+textfeld:
+e-mail
+passwort
+-
+button
+-
+hier werden die E-Mail und das 
+Passwort abgefragt. wenn sie in der
+datenbank vorhanden sind, wird der
+user auf die übersichtsseite geführt.
+wenn nicht, dann muss er sich 
+registieren.
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1580</x>
+      <y>20</y>
+      <w>540</w>
+      <h>620</h>
+    </coordinates>
+    <panel_attributes>halign=center
+4,aufbau von übersichtsseite überlegen
+-
+die zukunft des programms
+-
+buttons mit spielename(mehr nicht)
+-
+buttons am ende, die zum spieleeintrag 
+führen und zum login zurück 
+führen(auslogen).
+-
+desweiteren werden sich dort buttons 
+befinden, die den user zu seinen eigenen 
+information bringt und auch seine eigenen 
+information bearbeiten kann.
+dort kann er auch die löschung von 
+eingetragenen spielen machen. 
+hier kann er auch beanrtagen, dass 
+sein acc gelöscht wird.
+-
+die informationen werden aus der 
+dantenbank gezogen und auf übersicht 
+tabellarisch dargestellt.
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

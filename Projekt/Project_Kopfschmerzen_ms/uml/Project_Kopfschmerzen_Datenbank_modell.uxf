@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>730</x>
+      <y>440</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>game
+-
+game_id(int)PK
+gamename(varchar)
+gamepreis(flaot)
+gamelink(varchar)
+releasdate_vom_game(varchar)
+rating_id(int)FK
+publisher_id(int)FK
+entwickler_id(int)FK
+beschreibung_id(int)FK
+user_id(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>440</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>genre
+-
+genre_id(int)PK
+genre(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>510</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>gamegenre
+-
+gamegenre_id(int)PK
+game_id(int)FK
+genre_id(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>990</x>
+      <y>320</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>rating
+-
+rating_id(int)PK
+rating(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>440</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>plattform
+-
+plattform_id(int)PK
+Platform(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>510</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>gameplattform
+-
+gameplattform_id(int)PK
+game_id(int)FK
+palttform_id(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>690</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>style
+-
+style_id(int)PK
+Style(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>470</x>
+      <y>600</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>gamestyle
+-
+gamestyle_id(int)PK
+game_id(varchar)FK
+style_id(varchar)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>850</x>
+      <y>320</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>publisher
+-
+publisher_id(int)PK
+publisher(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>710</x>
+      <y>320</y>
+      <w>130</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>entwickler
+-
+entwickler_id(int)PK
+entwickler(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>540</x>
+      <y>320</y>
+      <w>160</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>beschreibung
+-
+beschreibung_id(int)PK
+beschreibung(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>370</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>110.0;10.0;110.0;70.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>610</x>
+      <y>370</y>
+      <w>140</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>120.0;70.0;10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>520</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>660</y>
+      <w>100</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>80.0;60.0;10.0;60.0;10.0;10.0;80.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>950</x>
+      <y>600</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>900</x>
+      <y>370</y>
+      <w>40</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>760</x>
+      <y>370</y>
+      <w>40</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>430</y>
+      <w>90</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;160.0;70.0;160.0;70.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>520</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;130.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>390</x>
+      <y>430</y>
+      <w>110</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>90.0;10.0;10.0;10.0;10.0;160.0;80.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1440</x>
+      <y>400</y>
+      <w>230</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>user
+-
+user_id(int)PK
+vorname(varchar)
+nachname(varchar)
+postleitzahl(int)FK
+strasse(int)FK
+hausnummer(int)FK
+e_mail(varchar)uniqe
+passwort(password)uniqe
+rechte_id(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>600</x>
+      <y>600</y>
+      <w>150</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1220</x>
+      <y>430</y>
+      <w>240</w>
+      <h>260</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>220.0;10.0;80.0;10.0;80.0;230.0;10.0;230.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1070</x>
+      <y>600</y>
+      <w>160</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>gameuser
+-
+gameuser_id(int)PK
+game_id(int)FK
+User_id(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1640</x>
+      <y>670</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>Rechte
+--
+rechte_id(int)PK
+rechte(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1660</x>
+      <y>580</y>
+      <w>130</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0;110.0;70.0;50.0;70.0;50.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>670</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>strasse
+-
+strasse_id(int)PK
+strasse(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>830</y>
+      <w>140</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>ort
+-
+ort_id(int)PK
+ort(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>670</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>hausnummer
+-
+hausnummer_id(int)PK
+hausnummer(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>830</y>
+      <w>150</w>
+      <h>60</h>
+    </coordinates>
+    <panel_attributes>e_mail
+-
+e_mail_id(int)PK
+e_mail(varchar)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1330</x>
+      <y>740</y>
+      <w>140</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>postleitzehl
+-
+postleitzehl_id(int)PK
+postleitzehl(varchar)
+ort(int)FK</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1300</x>
+      <y>470</y>
+      <w>160</w>
+      <h>340</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>140.0;10.0;10.0;10.0;10.0;310.0;30.0;310.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1300</x>
+      <y>800</y>
+      <w>50</w>
+      <h>100</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>30.0;10.0;10.0;10.0;10.0;70.0;30.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1320</x>
+      <y>510</y>
+      <w>140</w>
+      <h>180</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0;10.0;140.0;80.0;140.0;80.0;160.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1330</x>
+      <y>530</y>
+      <w>250</w>
+      <h>160</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0;10.0;110.0;220.0;110.0;220.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1620</x>
+      <y>540</y>
+      <w>200</w>
+      <h>350</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=n
+m2=1</panel_attributes>
+    <additional_attributes>50.0;10.0;180.0;10.0;180.0;320.0;10.0;320.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1480</x>
+      <y>740</y>
+      <w>150</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>passwort
+-
+passwort_id(int)PK
+passwort(password)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1620</x>
+      <y>560</y>
+      <w>190</w>
+      <h>240</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-&gt;
+m1=1
+m2=n</panel_attributes>
+    <additional_attributes>50.0;10.0;170.0;10.0;170.0;210.0;10.0;210.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1440</x>
+      <y>910</y>
+      <w>240</w>
+      <h>50</h>
+    </coordinates>
+    <panel_attributes>EMAIL UNIQUE MACHEN
+INNERHALB DES PROGRAMMS!
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

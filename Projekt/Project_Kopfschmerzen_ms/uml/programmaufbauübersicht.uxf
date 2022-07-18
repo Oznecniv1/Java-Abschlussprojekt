@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>20</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>100</y>
+      <w>900</w>
+      <h>1080</h>
+    </coordinates>
+    <panel_attributes>Programmaufbauübersicht!
+-
+step1:
+ich brauche eine Datenbank 
+(da es KEIN Datenbankkurs ist mit SQL,
+werde ich sie Programmtechnich realisieren
+in der dritten normalform(mit verstoß gegen die dritte normalform
+(also eine denormalisierte datenbank in der dritten normalform))) LOL
+-
+step2:
+Ich brauche ein Registrierungs-formular
+-
+step3: 
+Ich brauche ein Login-formular-------------------&gt;(Session Start).
+-
+step4:
+Ich brauche eine Spiel Hinzufügen formular
+-
+step5: 
+ich brauche ein ausloggen------------------------&gt;(Session end).
+-
+!!!!!!!!!!!!!!!!!!!!!!!!NICHT VERGESSSEN!!!!!!!!!!!!!!!!!!!!!!!!!
+
+FRAGEN: HYPERLINKS IN JAVA IN VERBINDUNG MIT GUI, 
+		  DASS MAN VON FENSTER ZU FENSTER WECHSELN KANN!
+		  
+FRAGEN: BESTÄTIGUNG FÜR DEN USER, 
+		  BEI ERFOLGREICHEN DATENEINTRAGEN IN DIE DATENBANK!
+		  
+FRAGEN: CHECKBOXEN DATENBANK TECHNISCH FÜLLEN UND 
+		  DAS AUSGEFÜLLTE WIEDER IN DIE DATENBANK EINTRAGEN!
+		  
+FRAGEN: RADIOBUTTON DATENBANK TECHNISCH FÜLLEN UND 
+		  DAS AUSGEFÜLLTE WIEDER IN DIE DATENBANK EINTRAGEN!
+		  
+FRAGEN: SELECTBOXEN DATENBANKTECHNICH FÜLLEN UND 
+		  DAS AUSGEFÜLLTE WIEDER IN DIE DATENBANK EINTRAGEN!
+-</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1120</x>
+      <y>100</y>
+      <w>760</w>
+      <h>540</h>
+    </coordinates>
+    <panel_attributes>Programmaufbauübersicht!
+die zukunft des programms.
+-
+ich brauche eine Spiele übersicht(optional).
+-
+ich brauche eine Spiele ansicht(optional).
+-
+ich brauche ein formular um Spiele zu löschen(optional).
+-
+ich brauche ein formular um Spiele zu bearbeiten(optional).
+-
+ich brauche ein userinformation anzeigen(optional).
+-
+ich brauche ein formular um 
+nutzerinformationen zu bearbeiten 
+und die einträge von user einzusehen.(optional).
+-
+ich brauceh ein formular um Nutzer zu löschen(optional).
+-
+ICH HABE HERAUSGEFUNDEN, WIE MAN
+HTML IN JAVA VERWENDEN KANN!^^
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
